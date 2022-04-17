@@ -68,7 +68,7 @@ jobs:
           
       - name: Build Log
         run: |
-          cp assets/preload/videos assets/videos
+          cp -r assets/preload/videos assets/videos
           haxelib run lime setup android
           haxelib run lime build android -final
           
